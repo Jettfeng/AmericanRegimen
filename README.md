@@ -3,3 +3,7 @@
 <h3>初始化项目:koa2 -e koa</h3>
 <p>-e是指定ejs模板，默认jade模板，koa为项目名称</p>
 <p>进入到koa目录，npm install & npm start (开发模式:npm run dev)启动项目；访问项目localhost:3000</p>
+
+<h2>第4章 Mongoose和Redis基础</h2>
+<h3>4-1 mongoose（1）</h3>
+<p>1.安装mongoose npm i mongoose</p>

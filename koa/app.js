@@ -6,9 +6,12 @@ const onerror = require("koa-onerror");
 const bodyparser = require("koa-bodyparser");
 const logger = require("koa-logger");
 const pv = require("./middleware/koa-pv");
-const m1 = require('./middleware/m1')
-const m2 = require('./middleware/m2')
-const m3 = require('./middleware/m3')
+const m1 = require("./middleware/m1");
+const m2 = require("./middleware/m2");
+const m3 = require("./middleware/m3");
+
+const mongoose = require("mongoose");
+const dbConfig = require("./dbs/config");
 
 const index = require("./routes/index");
 const users = require("./routes/users");
@@ -24,9 +27,9 @@ app.use(
 );
 app.use(pv());
 
-app.use(m2())
-app.use(m3())
-app.use(m1())
+app.use(m2());
+app.use(m3());
+app.use(m1());
 app.use(json());
 app.use(logger());
 app.use(require("koa-static")(__dirname + "/public"));
@@ -48,6 +51,16 @@ app.use(async (ctx, next) => {
 // routes
 app.use(index.routes(), index.allowedMethods());
 app.use(users.routes(), users.allowedMethods());
+
+// 连接数据库
+mongoose.connect(
+  dbConfig.dbs,
+  {
+    useNewUrlParser: true
+  },function(){
+    console.log('数据库连接成功');
+  }
+);
 
 // error-handling
 app.on("error", (err, ctx) => {
