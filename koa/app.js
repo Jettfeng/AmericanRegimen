@@ -5,6 +5,9 @@ const json = require("koa-json");
 const onerror = require("koa-onerror");
 const bodyparser = require("koa-bodyparser");
 const logger = require("koa-logger");
+// 引入中间件
+const session = require("koa-generic-session");
+const Redis = require("koa-redis");
 const pv = require("./middleware/koa-pv");
 const m1 = require("./middleware/m1");
 const m2 = require("./middleware/m2");
@@ -18,7 +21,13 @@ const users = require("./routes/users");
 
 // error handler
 onerror(app);
-
+// 连接
+app.keys=['keys','keyskeys']
+app.use(session({
+  key:'mt',
+  prefix:'mtpr',
+  store:new Redis()//使用redis存储
+}))
 // middlewares
 app.use(
   bodyparser({
@@ -57,8 +66,9 @@ mongoose.connect(
   dbConfig.dbs,
   {
     useNewUrlParser: true
-  },function(){
-    console.log('数据库连接成功');
+  },
+  function() {
+    console.log("数据库连接成功");
   }
 );
 

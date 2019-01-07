@@ -7,3 +7,8 @@
 <h2>第4章 Mongoose和Redis基础</h2>
 <h3>4-1 mongoose（1）</h3>
 <p>1.安装mongoose npm i mongoose</p>
+<h2>4-3 Redis（1）</h2>
+<h3>1.安装Redis </h3>
+<h3>2.启动：在安装目录下找到redis-server.exe,点击启动</h3>
+<h3>3.安装中间件:npm i koa-generic-session koa-redis</h3>
+<h3>4.查看存储的key值：在安装目录下点击redis-cli，输入keys* ,显示key值，key值前缀为设置的mtpr</h3>
