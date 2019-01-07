@@ -16,3 +16,4 @@
 <h3>tips:使用Nuxt.js with Koa</h3>
 <h3>初始化：vue init nuxt-community/koa-template project-name</h3>
 <h3>tips:使用Nuxt.js with Koa</h3>
+<h3>tips:npm run dev 会报错；解决方案:npm uninstall nuxt ;npm install nuxt@1.4.2</h3>
