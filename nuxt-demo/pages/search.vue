@@ -6,6 +6,10 @@
         v-for="(item,idx) in list"
         :key="idx"
       >{{item}}</li>
+       <li
+        v-for="(item,idx) in $store.state.city.list"
+        :key="idx"
+      >{{item}}</li>
     </ul>
   </div>
 </template>
