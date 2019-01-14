@@ -6,7 +6,7 @@
         class="left"
       >
         <img
-          src="//s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png"
+          src="//s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/logo.png"
           title="美团app"
           alt="美团app"
         />
