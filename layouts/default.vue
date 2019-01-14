@@ -3,7 +3,7 @@
     <el-header>
       <my-header></my-header>
     </el-header>
-    <el-main>
+    <el-main class="mainLxf">
       <nuxt />
     </el-main>
     <el-footer>Footer</el-footer>
