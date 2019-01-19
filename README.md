@@ -40,3 +40,7 @@
 <p>安装koa-generic-session：npm i koa-generic-session</p>
 <p>安装koa-redis：npm i koa-redis</p>
 <p>安装koa-redis：npm i koa-json</p>
+<p>配置跨域</p>
+<p>axios: {</p>
+<p> proxy: true</p>
+<p>},</p>
