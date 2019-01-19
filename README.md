@@ -44,3 +44,4 @@
 <p>axios: {</p>
 <p> proxy: true</p>
 <p>},</p>
+<h3>安装crypto-js：npm i crypto-js(加密)</h3>
