@@ -26,7 +26,12 @@
 <p>3.修改package.json，在dev和build命令后加--exec babel-node</p>
 
 <h2>第8章 第8章 开发美团网首页-登录注册</h2>
-<h3>1.安装mongoose ：npm i mongoose</h3>
-<h3>2.安装koa-router ：npm i koa-router</h3>
-<h3>3.安装koa-redis ：npm i koa-redis</h3>
-<h3>4.安装安装nodemailer ：npm i nodemailer</h3>
+<h3>8-2</h3>
+<p>1.安装mongoose ：npm i mongoose</p>
+<p>2.安装koa-router ：npm i koa-router</p>
+<p>3.安装koa-redis ：npm i koa-redis</p>
+<p>4.安装安装nodemailer ：npm i nodemailer</p>
+<h3>8-3</h3>
+<p>安装axios：npm i axios</p>
+<p>安装koa-passport：npm i koa-passport</p>
+<p>安装passport-local：npm i passport-local</p>
