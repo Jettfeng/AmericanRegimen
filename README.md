@@ -35,3 +35,8 @@
 <p>安装axios：npm i axios</p>
 <p>安装koa-passport：npm i koa-passport</p>
 <p>安装passport-local：npm i passport-local</p>
+<h3>8-6</h3>
+<p>安装koa-bodyParser：npm i koa-bodyparser</p>
+<p>安装koa-generic-session：npm i koa-generic-session</p>
+<p>安装koa-redis：npm i koa-redis</p>
+<p>安装koa-redis：npm i koa-json</p>
