@@ -1,4 +1,3 @@
-
 <h2>第3章 Koa2基础知识</h2>
 <h3>安装koa-generator:npm install -g koa-generator</h3>
 <h3>初始化项目:koa2 -e koa</h3>
@@ -25,3 +24,9 @@
 <p>1.安装babel:npm i babel-core babel-preset-es2015 babel-cli</p>
 <p>2.配置.babelrc</p>
 <p>3.修改package.json，在dev和build命令后加--exec babel-node</p>
+
+<h2>第8章 第8章 开发美团网首页-登录注册</h2>
+<h3>1.安装mongoose ：npm i mongoose</h3>
+<h3>2.安装koa-router ：npm i koa-router</h3>
+<h3>3.安装koa-redis ：npm i koa-redis</h3>
+<h3>4.安装安装nodemailer ：npm i nodemailer</h3>
